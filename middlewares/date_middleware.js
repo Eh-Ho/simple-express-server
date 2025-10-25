@@ -1,5 +1,5 @@
 const date = (req, res, next) => {
-    console.log(new Date (Date.now()).toUTCString())
+    console.log(new Date (Date.now()).toLocaleTimeString())
     next()
 }
 
