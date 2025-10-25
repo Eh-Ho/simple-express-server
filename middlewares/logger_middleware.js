@@ -1,5 +1,5 @@
 const logger = (req, res, next) => {
-    console.log(`request url : "${req.url}"`);
+    console.log(`request : ${req.method}  ->   "${req.url}"`);
     next();
 }
 module.exports = logger;
