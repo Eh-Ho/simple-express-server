@@ -1,6 +1,8 @@
 const express = require('express');
-
+const logger = require('./middlewares/logger_middleware')
 const app = express();
+
+app.use(logger)
 
 
 app.listen(3000,()=>{
